@@ -28,9 +28,9 @@ The plugin cfBlockCountry can be used to block IP address from certain countries
 3.	Get the latest GeoIP.dat from http://www.maxmind.com/app/geolitecountry. and replace the existing (blank file with same name)one in /library/geoip folder
 4.	Enable Local option in plugin settings.
 
-### Changes ##
+### cfBlockCountry-mod changes ##
 
-cfBlockCountry-mod has a few new feautures: 
+ cfBlockCountry-mod has a few new feautures: 
 
 - Whitelist/blacklist 
 - Allow or deny country codes
@@ -38,10 +38,13 @@ cfBlockCountry-mod has a few new feautures:
 
 "External" geoip lookup is disabled since url is offline.
 
-The default file whitelist/blacklist is [CFBlockCountryIPList.php](). As example search engines Google, Bings, Duckduckgo and Yahoo are whitelisted and IANA TEST-NET are blacklisted, be careful when editting.
+#### Whitelist/blacklist:
+The default file whitelist/blacklist is [CFBlockCountryIPList.php](). As example search engines Google, Bings, Duckduckgo and Yahoo are whitelisted and IANA TEST-NET are blacklisted. Be careful when editting:
 
-**CAUTION! We do not verify anything! Any mistake will lead to unreachable site!
-	Enter IPv4 ranges like this: '192.168.0.1 192.168.0.255'**
-  Make sure the last ip ranges does not have a "," at the end of the line.
+**CAUTION! We do not verify anything! Any mistake will lead to unreachable site!**
+
+Enter IPv4 ranges like this: ```'192.168.0.1 192.168.0.255'```
+  
+Make sure the last ip ranges does not have a "```,```" at the end of the line.
  
- cfBlockCountry-mod has been tested with Joomla 2.5
+cfBlockCountry-mod has been tested with Joomla 2.5
