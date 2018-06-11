@@ -38,7 +38,7 @@ The plugin cfBlockCountry can be used to block IP address from certain countries
 
 "External" geoip lookup is disabled since url is offline.
 
-#### Whitelist/blacklist:
+#### Whitelist/blacklist usage:
 The default file whitelist/blacklist is [CFBlockCountryIPList.php](). As example search engines Google, Bings, Duckduckgo and Yahoo are whitelisted and IANA TEST-NET are blacklisted. Be careful when editting:
 
 **CAUTION! We do not verify anything! Any mistake will lead to unreachable site!**
