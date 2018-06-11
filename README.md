@@ -32,9 +32,9 @@ The plugin cfBlockCountry can be used to block IP address from certain countries
 
  cfBlockCountry-mod has a few new feautures: 
 
-- Whitelist/blacklist 
+- Whitelist/blacklist ip ranges
 - Allow or deny country codes
-- IPv6 support (country codes *only*, not whitelist/blacklist)
+- IPv6 support (for country codes *only*, not white/blacklist)
 
 "External" geoip lookup is disabled since url is offline.
 
@@ -44,7 +44,7 @@ The default file whitelist/blacklist is [CFBlockCountryIPList.php](). As example
 **CAUTION! We do not verify anything! Any mistake will lead to unreachable site!**
 
 Enter IPv4 ranges like this: ```'192.168.0.1 192.168.0.255'```
-  
+
 Make sure the last ip ranges does not have a "```,```" at the end of the line.
- 
+
 cfBlockCountry-mod has been tested with Joomla 2.5
