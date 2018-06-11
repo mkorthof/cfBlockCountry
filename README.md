@@ -43,8 +43,7 @@ The default file whitelist/blacklist is [CFBlockCountryIPList.php](). As example
 
 **CAUTION! We do not verify anything! Any mistake will lead to unreachable site!**
 
-Enter IPv4 ranges like this: ```'192.168.0.1 192.168.0.255'```
-
-Make sure the last ip ranges does not have a "```,```" at the end of the line.
+- Enter IPv4 ranges like this: ```'192.168.0.1 192.168.0.255'```
+- Make sure the last ip ranges does not have a "```,```" at the end of the line.
 
 cfBlockCountry-mod has been tested with Joomla 2.5
