@@ -3,7 +3,7 @@ https://www.codefire.org/cfblockcountries.html
 
 ### Updated version:
 
-Please not that CodeFire has a new (paid) "pro" version available which offers the same features as cfBlockCountry-mod (and more) and works with Joomla 2.5 and 3: http://www.codefire.org/cfblockcountry-pro.html
+Please note that CodeFire has a new (paid) "pro" version available which offers the same features as cfBlockCountry-mod (and more) and works with Joomla 2.5 and 3: http://www.codefire.org/cfblockcountry-pro.html
 
 I was unaware of this version until recently and thought there would be no more updates to the plugin, hence cfBlockCountry-mod.
 
