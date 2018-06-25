@@ -1,6 +1,14 @@
 ## cfBlockCountry (Joomla Plugin)
 https://www.codefire.org/cfblockcountries.html
 
+### Updated version:
+
+Please not that CodeFire has a new (paid) "pro" version available which offers the same features as cfBlockCountry-mod (and more) and works with Joomla 2.5 and 3: http://www.codefire.org/cfblockcountry-pro.html
+
+I was unaware of this version until recently and thought there would be no more updates to the plugin, hence cfBlockCountry-mod.
+
+## Original README.TXT
+
 The plugin cfBlockCountry can be used to block IP address from certain countries. For example if you want to block access of the site from any IP in United States you can use this plugin.
 
 ### Some important points:
@@ -29,22 +37,32 @@ The plugin cfBlockCountry can be used to block IP address from certain countries
 3.	Get the latest GeoIP.dat from http://www.maxmind.com/app/geolitecountry. and replace the existing (blank file with same name)one in /library/geoip folder
 4.	Enable Local option in plugin settings.
 
-### cfBlockCountry-mod changes ##
+## cfBlockCountry-mod
 
- cfBlockCountry-mod has a few new feautures: 
+### Changes:
 
-- Whitelist/blacklist ip ranges
+ cfBlockCountry-mod has a few new features: 
+
+- Whitelist/blacklist IP ranges
 - Allow or deny country codes
 - IPv6 support (for country codes *only*, not white/blacklist)
+- Log file
 
 "External" geoip lookup is disabled since url is offline.
 
-#### Whitelist/blacklist usage:
-The default file whitelist/blacklist is [CFBlockCountryIPList.php](CFBlockCountryIPList.php). As example search engines Google, Bings, Duckduckgo and Yahoo are whitelisted and IANA TEST-NET are blacklisted. Be careful when editting:
+#### Whitelist/Blacklist usage:
+The default Whitelist/Blacklist file is [CFBlockCountryIPList.php](CFBlockCountryIPList.php). As example search engines Google, Bings, Duckduckgo and Yahoo are whitelisted and "IANA TEST-NET" is blacklisted.
+
+Be careful when editing:
 
 **CAUTION! We do not verify anything! Any mistake will lead to unreachable site!**
 
 - Enter IPv4 ranges like this: ```'192.168.0.1 192.168.0.255'```
 - Make sure the last ip ranges does not have a "```,```" at the end of the line.
 
+#### Log file:
+
+Log blocked Country Codes and IP's to file e.g. `/logs/cfblockcountry.log` 
+ 
+ 
 cfBlockCountry-mod has been tested with Joomla 2.5
