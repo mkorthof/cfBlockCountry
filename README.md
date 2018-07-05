@@ -1,6 +1,6 @@
 # cfBlockCountry (Joomla Plugin)
 
-[cfBlockCountry-mod](#cfBlockCountry-mod) instructions are [below](#cfBlockCountry-mod)
+[cfBlockCountry-mod](#cfblockcountry-mod) instructions are [below](#cfBlockCountry-mod)
 
 ### Versions
 
@@ -11,7 +11,7 @@ I was unaware of this version until recently and thought there would be no more 
 So, now there's 3 :)
 
 - [cfBlockCountry](https://www.codefire.org/cfblockcountries.html) original version by CodeFire
-- [cfBlockCountry-mod](#cfBlockCountry-mod) modified version by me
+- [cfBlockCountry-mod](#cfblockcountry-mod) modified version by me
 - [cfBlockCountry-PRO](http://www.codefire.org/cfblockcountry-pro.html) by CodeFire
 
 ## Original cfBlockCountry - README.TXT
