@@ -21,11 +21,15 @@ class plgSystemCFBlockCountry extends JPlugin {
 	function onAfterDispatch() {
 
 		//global $mainframe;
-		$app =& JFactory::getApplication();
-		if ( !$app->isSite() ) return;
+		//$params = new JParameter( $plugin->params );
+		//if ( !$app->isSite() ) return;
 
 		$plugin =& JPluginHelper::getPlugin( 'system', 'CFBlockCountry' );
-		//$params = new JParameter( $plugin->params );
+		$app =& JFactory::getApplication();
+		$layer					= $this->params->get( 'layer', '' );
+		if ($app->isSite()) { $scope = 'site'; } elseif ($app->isAdmin()) { $scope = 'admin'; }
+		if ( $layer == 'frontend' && $scope != 'site' ) return;
+		if ( $layer == 'backend' && $scope != 'admin' ) return;
 
 		$countryCodes			= $this->params->get( 'country', '' );
 		$action					= $this->params->get( 'action', '' );
@@ -40,9 +44,9 @@ class plgSystemCFBlockCountry extends JPlugin {
 		$country = '';
 		$debug = 0;
 
-		$blocked = function($reason, $match) use ($option, $textMsgForBlocked, $site, $log, $log_file) {
+		$blocked = function($reason, $match) use ($scope, $option, $textMsgForBlocked, $site, $log, $log_file) {
 			if (isset($log) && $log != '') {
-				$data = @date('Y-m-d H:i:s') . " " . str_pad($reason . ":", 11) . $_SERVER['REMOTE_ADDR'] . " ($match)";
+				$data = @date('Y-m-d H:i:s') . " " . str_pad($scope, 6) . str_pad($reason . ":", 11) . $_SERVER['REMOTE_ADDR'] . " ($match)";
 				file_put_contents(JPATH_ROOT . $log, $data . PHP_EOL, FILE_APPEND);
 			}
 			if($option == 0) {

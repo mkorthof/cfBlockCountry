@@ -18,6 +18,11 @@
  
 			<fieldset name="basic">
 
+				<field name="layer" type="list" default="0" label="Front- and/or Backend" description="Use plugin on Frontend (site), Backend (administrator) or both">
+					<option value="frontend">Fontend</option>
+					<option value="backend">Backend</option>
+					<option value="both">Both</option>
+				</field>
 				<field name="country" type="text" size="50" default="" label="Country Codes" description="Country Codes to be blocked for example US for United States. Use comma (,) seperated values for multiple countries"/>
 				<field name="action" type="list" default="0" label="Allow or Deny" description="Allow only the listed Country Codes above and Deny all other (non matching) Codes, or Deny listed Country Codes and Allow all others">
 					<option value="deny">DENY Country Codes</option>

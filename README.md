@@ -1,13 +1,20 @@
-## cfBlockCountry (Joomla Plugin)
-https://www.codefire.org/cfblockcountries.html
+# cfBlockCountry (Joomla Plugin)
 
-### Updated version:
+[cfBlockCountry-mod](#cfBlockCountry-mod) instructions are [below](#cfBlockCountry-mod)
 
-Please note that CodeFire has a new (paid) "pro" version available which offers the same features as cfBlockCountry-mod (and more) and works with Joomla 2.5 and 3: http://www.codefire.org/cfblockcountry-pro.html
+### Versions
+
+Please note that CodeFire has a new (paid) "pro" version available which offers the same features as cfBlockCountry-mod (and more) and works with Joomla 2.5 and 3. 
 
 I was unaware of this version until recently and thought there would be no more updates to the plugin, hence cfBlockCountry-mod.
 
-## Original README.TXT
+So, now there's 3 :)
+
+- [cfBlockCountry](https://www.codefire.org/cfblockcountries.html) original version by CodeFire
+- [cfBlockCountry-mod](#cfBlockCountry-mod) modified version by me
+- [cfBlockCountry-PRO](http://www.codefire.org/cfblockcountry-pro.html) by CodeFire
+
+## Original cfBlockCountry - README.TXT
 
 The plugin cfBlockCountry can be used to block IP address from certain countries. For example if you want to block access of the site from any IP in United States you can use this plugin.
 
@@ -37,20 +44,24 @@ The plugin cfBlockCountry can be used to block IP address from certain countries
 3.	Get the latest GeoIP.dat from http://www.maxmind.com/app/geolitecountry. and replace the existing (blank file with same name)one in /library/geoip folder
 4.	Enable Local option in plugin settings.
 
-## cfBlockCountry-mod
+# cfBlockCountry-mod
 
-### Changes:
+Modified cfBlockCountry version by me with a few new features.
 
- cfBlockCountry-mod has a few new features: 
+## Changes:
+
+ New features cfBlockCountry-mod:
 
 - Whitelist/blacklist IP ranges
 - Allow or deny country codes
 - IPv6 support (for country codes *only*, not white/blacklist)
 - Log file
+- Block on website (frontend) and/or admin interface (backend)
 
-"External" geoip lookup is disabled since url is offline.
+"External" geoip lookup is disabled since CF url is offline.
 
-#### Whitelist/Blacklist usage:
+## Whitelist/Blacklist usage:
+
 The default Whitelist/Blacklist file is [CFBlockCountryIPList.php](CFBlockCountryIPList.php). As example search engines Google, Bings, Duckduckgo and Yahoo are whitelisted and "IANA TEST-NET" is blacklisted.
 
 Be careful when editing:
@@ -60,9 +71,9 @@ Be careful when editing:
 - Enter IPv4 ranges like this: ```'192.168.0.1 192.168.0.255'```
 - Make sure the last ip ranges does not have a "```,```" at the end of the line.
 
-#### Log file:
+## Log file:
 
 Log blocked Country Codes and IP's to file e.g. `/logs/cfblockcountry.log` 
- 
+
  
 cfBlockCountry-mod has been tested with Joomla 2.5
