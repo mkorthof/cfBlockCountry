@@ -1,6 +1,6 @@
 # cfBlockCountry (Joomla Plugin)
 
-[cfBlockCountry-mod](#cfblockcountry-mod) instructions are [below](#cfBlockCountry-mod)
+[cfBlockCountry-mod](#cfblockcountry-mod) instructions are [below](#cfblockcountry-mod)
 
 ### Versions
 
