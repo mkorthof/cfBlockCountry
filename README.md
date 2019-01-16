@@ -1,10 +1,6 @@
 # cfBlockCountry (Joomla Plugin)
 
-<<<<<<< HEAD
 ### Updated [cfBlockCountry-mod](#cfBlockCountry-mod) instructions are [below](#cfBlockCountry-mod)
-=======
-[cfBlockCountry-mod](#cfblockcountry-mod) instructions are [below](#cfblockcountry-mod)
->>>>>>> 9ea9b0cfd30367d20565107e99f610832262b4a9
 
 ### Versions
 
