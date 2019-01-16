@@ -8,7 +8,7 @@
 	<authorEmail>joomla@codefire.in</authorEmail>
 	<authorUrl>www.CodeFire.in</authorUrl>
 	<version>2.5</version>
-	<description>Modded version - Allows blocking of countries based on the user's geoIP. <br/>We have used MaxMind free geoIP DB if you want more accuracy you can use paid version of the DB.</description>
+	<description>Modded version - Allows blocking of countries based on the user's GeoIP. <br/>We have used MaxMind free GeoIP DB if you want more accuracy you can use paid version of the DB.</description>
 	<files>
 		<filename plugin="CFBlockCountry">CFBlockCountry.php</filename>
 	</files>
@@ -38,16 +38,19 @@
 				<!--field name="external" type="list" default="1" label="Verificatin" description="Do you want to install geopIP on your own site. If yes select Local else External. In case you use Local you will need to update geopIP DB everymonth. "!-->
 				<field name="external" type="list" default="0" label="Verification" description="Do you want to install geopIP on your own site. If yes select Local else External(disabled). In case you use Local you will need to update geopIP DB everymonth. ">
 					<option value="0">Local</option>
-					<!--option value="1"--><!--External--><!--/option-->		
+					<!--option value="1"--><!--External--><!--/option-->
 				</field>
 				<field name="show_msg" type="list" default="0" label="Message or Redirect" description="When a user from blocked country logs in display message or re-direct to other site">
 					<option value="0">Message</option>
 					<option value="1">Redirect</option>
 				</field>
-				<field name="blockedText" type="text" size="50" default="" label="Text Message" description="Text to be displayed is the user is from blocked country"/>	
+				<field name="blockedText" type="text" size="50" default="" label="Text Message" description="Text to be displayed is the user is from blocked country"/>
 				<field name="site" type="text" size="50" default="" label="Site" description="Site to redirect to, if the user is from blocked country. Enter as http://www.CodeFire.in"/>
 				<field name="log" type="text" size="50" default="" label="Logging" description="Log blocked IP's to file e.g. /logs/cfblockcountry.log, leave empty to disable"/>
-				 
+				<field name="geoip_version" type="list" default="1" label="GeoIP Version" description="If you're using the free version, choose GeoIP2 (V1/Legacy is no longer available)">
+					<option value="1">GeoIP2</option>
+					<option value="0">GeoIP1/Legacy</option>
+				</field>
 			</fieldset>
 		</fields>
 	</config>

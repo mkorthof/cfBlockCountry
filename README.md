@@ -1,6 +1,6 @@
 # cfBlockCountry (Joomla Plugin)
 
-[cfBlockCountry-mod](#cfBlockCountry-mod) instructions are [below](#cfBlockCountry-mod)
+### Updated [cfBlockCountry-mod](#cfBlockCountry-mod) instructions are [below](#cfBlockCountry-mod)
 
 ### Versions
 
@@ -14,7 +14,8 @@ So, now there's 3 :)
 - [cfBlockCountry-mod](#cfBlockCountry-mod) modified version by me
 - [cfBlockCountry-PRO](http://www.codefire.org/cfblockcountry-pro.html) by CodeFire
 
-## Original cfBlockCountry - README.TXT
+## CodeFire's Original cfBlockCountry 
+### README.TXT:
 
 The plugin cfBlockCountry can be used to block IP address from certain countries. For example if you want to block access of the site from any IP in United States you can use this plugin.
 
@@ -46,12 +47,13 @@ The plugin cfBlockCountry can be used to block IP address from certain countries
 
 # cfBlockCountry-mod
 
-Modified cfBlockCountry version by me with a few new features.
+### Modified cfBlockCountry version by me with a few new features:
 
 ## Changes:
 
  New features cfBlockCountry-mod:
 
+- GeoIP2 support
 - Whitelist/blacklist IP ranges
 - Allow or deny country codes
 - IPv6 support (for country codes *only*, not white/blacklist)
@@ -59,6 +61,13 @@ Modified cfBlockCountry version by me with a few new features.
 - Block on website (frontend) and/or admin interface (backend)
 
 "External" geoip lookup is disabled since CF url is offline.
+
+## GeoIP2
+
+Put these files in the same directory as GeoIPv1 (see README above) and set "GeoIP Version" option to GeopIP2 in plugin settings.
+
+- You'll need **geoip2.phar** from https://github.com/maxmind/GeoIP2-php/releases 
+- The Country DB file **GeoLite2-Country.mmdb** from https://dev.maxmind.com/geoip/geoip2/geolite2/
 
 ## Whitelist/Blacklist usage:
 
